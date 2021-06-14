@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Jquery dependecies-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!--Hoja de estilo propia-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--Fuente ULL-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <link rel="icon" href="./assets/img/favicon.ico">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Organiza tu tiempo y mejora tu estudio</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="navbar-fixed">
+        <nav id="barra_nav">
+          <div class="nav-wrapper">
+            <div class="container">
+              <a tabindex="0" id="logo-container" href="./index.html" class="brand-logo" title="Logo Universidad de la Laguna"><object id="logo_nav" class="responsive-img" type="image/svg+xml" data="assets/img/ull_logo_text.svg">Your browser does not support SVG.</object></a>
+              <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down"
+                  role="menubar"
+                  aria-label="Universidad de la laguna">
+                <li id="ubicacion" role="none"><a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./index.html" tabindex="1">Inicio</a></li>
+                <li><a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./pages/calendario.html" tabindex="2">Calendario</a></li>
+                <li><a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./pages/listaTareas.html" tabindex="3">Lista de tareas pendientes</a></li>
+                <li><a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./pages/sobrenosotros.html" tabindex="4">Sobre nosotros</a></li>
+              </ul>
+            </div>      
+          </div>
+        </nav>
+      </div>
+
+        <ul class="sidenav" id="menu-responsive">
+        <li id="ubicacion"><a href="./index.html" id="colorcontrast">Inicio</a></li>
+        <li><a href="./pages/calendario.html">Calendario</a></li>
+        <li><a href="./pages/listaTareas.html">Lista de tareas pendientes</a></li>
+        <li><a href="./pages/sobrenosotros.html">Sobre nosotros</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <h1 class="container" id="titulo" tabindex="5"><b>Organiza tu tiempo y mejora tu estudio</b></h1>
+      <div class="container section">
+        <div class="row">
+          <div class="col s12">
+            <div class="slider" tabindex="5">
+              <ul class="slides">
+                <li>              
+                  <img src="./assets/img/slider-images/inicio.png" class="responsive-img" alt="Imagen que representa inicio">
+                </li>
+                <li>              
+                  <a href="./pages/calendario.html"><img src="./assets/img/slider-images/calendario.png" class="responsive-img" alt="Acceder calendario"></a>
+                  <div class="caption left-align card-panel z-depth-4" id="etiquetas-slider">
+                    <h3 class="white-text">Accede a tu calendario de tareas</h3>
+                    <a href="./pages/calendario.html" class="white-text">Leer más...</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="./pages/listaTareas.html"><img src="./assets/img/slider-images/lista-tareas.png" class="responsive-img" alt="Lista de tareas"></a>
+                  <div class="caption left-align card-panel z-depth-4" id="etiquetas-slider">
+                    <h3 class="white-text">Consulta tus tareas pendientes</h3>
+                    <a href="./pages/listaTareas.html" class="white-text">Leer más...</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="./pages/sobrenosotros.html"><img src="./assets/img/slider-images/sobre-nosotros.png" class="responsive-img" alt="Conócenos"></a>
+                    <div class="caption left-align card-panel z-depth-4" id="etiquetas-slider">
+                      <h3 class="white-text">Conócenos</h3>
+                      <a href="./pages/sobrenosotros.html" class="white-text">Leer más...</a>
+                    </div>
+                  </div>
+          
+                  <div class="center-align">
+                    <a id="botonTransicionIzq" class="btn-floating btn-large waves-effect waves-light center btn-small" tabindex="6" onclick="izqTransicion();"><i class="material-icons">keyboard_arrow_left</i></a>
+                    <button id="botonTransicion" class="btn-floating btn-large waves-effect waves-light center" onclick="pararTransicion();" tabindex="7"><i class="material-icons">pause</i></button>
+                    <button id="botonTransicionDer" class="btn-floating btn-large waves-effect waves-light center btn-small" onclick="derTransicion();" tabindex="8"><i class="material-icons">keyboard_arrow_right</i></button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      <!-- <div class="container"> -->
+        <h2 class="caption center-align" tabindex="9">Te interesa</h2>
+
+        <div class="container" id="cuerpo">
+          <div class="row">
+            <div class="col s6">
+              <div class="card" id="tarjeta">
+                <div class="card-image">
+                  <img src="./assets/img/ajustes.png"  id="imagenes_caras" alt="">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <span card="card-title" tabindex="10"><b>Funcionamiento</b></span>
+                    <p tabindex="11">Accediendo mediante esta tarjeta podremos aprender como hacer uso de esta página web a través del manual de uso</p>
+                  </div>
+                  <div class="card-action">
+                    <button id="botonManual" onclick="redirigir('./pages/funcionamiento.html');" class="btn purple" tabindex="11">Manual</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="card" id="tarjeta">
+                <div class="card-image">
+                  <img src="./assets/img/Calendario.png"  id="imagenes_caras" alt="">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <span card="card-title" tabindex="12"><b>Calendario académico</b></span>
+                    <p tabindex="13">Accediendo mediante esta tarjeta podremos acceder al Calendario académico de la ULL. Contiene las fechas destacadas de la ULL</p>
+                  </div>
+                  <div class="card-action">
+                    <button id="botonCalendarioAcademico" onclick="redirigir('./assets/pdf/CALENDARIO_ACADEMICO_2020_2021_V2-DEFINITIVO-1.pdf');" class="btn purple" tabindex="14">Consultar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    </main>
+
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s4 14 offset-s1">
+            <h5 class="white-text" id="titulo-pie" tabindex="14">Organiza tu tiempo y mejora tu estudio</h5>
+            <p class="grey-text text-lighten-4">
+              Pabellón de Gobierno, C/ Padre Herrera s/n<br>
+              Apartado Postal 456<br>
+              38200, San Cristóbal de La Laguna<br>
+              Santa Cruz de Tenerife - España<br>
+              Teléfono: (+34) 900 43 25 26
+            </p>
+          </div>
+          <div class="col s2 offset-s1">
+            <h5 class="white-text" id="titulo-pie" tabindex="15">Servicios</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="./pages/calendario.html" tabindex="16">Calendario</a></li>
+              <li><a class="grey-text text-lighten-3" href="./pages/listaTareas.html" tabindex="16">Lista de tareas</a></li>
+            </ul>
+          </div>
+          <div class="col s2 offset-s1">
+            <h5 class="white-text" id="titulo-pie" tabindex="17">Otros enlaces</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="./pages/accesibilidad.html"tabindex="17" >Accesibilidad</a></li>
+              <li><a class="grey-text text-lighten-3" href="./pages/sobrenosotros.html" tabindex="17">Sobre nosotros</a></li>
+              <li><a class="grey-text text-lighten-3" href="./pages/funcionamiento.html" tabindex="17">Manual de uso</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script src="scripts/main.js"></script>
+
+  </body>
+</html>
+      

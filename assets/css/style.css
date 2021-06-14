@@ -1,0 +1,230 @@
+body {
+  font-family: 'Montserrat';
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex:1 0 auto;
+}
+
+#breadcrumbs {
+  background-color: rgb(255, 255, 255);
+}
+
+:focus {
+  outline: 5px solid rgb(255, 111, 0);   
+}
+
+#breadcrumbs-general{
+  margin-left: 15%;
+}
+
+.breadcrumb:before {
+  color: #5c068c;
+}
+.breadcrumb, .breadcrumb:last-child {
+  color: #5c068c;
+}
+
+#barra_nav {
+  background-color: #5c068c;
+  font-size: 30px;
+  position: relative;
+}
+
+#botonTransicion {
+  background-color: #5c068c;
+  margin-top: 1%;
+}
+
+#botonTransicionIzq {
+  background-color: #5c068c;
+  margin-top: 1%;
+  margin-right: 2.5%;
+}
+
+#botonTransicionDer {
+  background-color: #5c068c;
+  margin-top: 1%;
+  margin-left: 2.5%;
+}
+
+#botonTransicionDer:focus-visible {
+  outline: 5px solid rgb(255, 111, 0);
+}
+
+#botonTransicion:focus-visible {
+  outline: 5px solid rgb(255, 111, 0);
+}
+
+#botonTransicionIzq:focus-visible {
+  outline: 5px solid rgb(255, 111, 0);
+}
+
+#titulo {
+  text-decoration:dashed;
+  font-size: 50px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#ubicacion {
+  background: linear-gradient(to bottom right, #5c068c, #4a3654);
+  box-shadow: 5px 5px 5px #999;
+}
+
+#cuerpo {
+  text-decoration:dashed;
+  font-size: 18px;
+  margin-top: 2%;
+}
+
+footer {
+  background-image: url("../img/Imagen-footer.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 4%;
+}
+
+#titulo-pie{
+  font-size: 20px;
+}
+
+#dias {
+  font-size: 25px;
+}
+
+#titulo_tarea {
+  font-size: 18px;
+  margin-left: 5%;
+}
+
+#descripcion_tarea {
+  font-size: 17px;
+  margin-left: 10%;
+}
+
+#logo_nav{
+  margin-top: 6%;
+  width: 170px
+}
+
+#tarjeta{
+  background-color: #b996cc;
+  box-shadow: 0 0 20px rgb(4, 4, 4);
+  border-radius: 10px 10px 10px 10px;
+}
+
+#imagenes_caras {
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 16vw;
+  height: 16vw;
+  border-radius: 50px 50px 50px 50px;
+}
+
+#separador{
+  height: calc(100vh - 40px - 200px - 360px);
+}
+
+#copyright {
+  color: #bbbbbb;
+}
+
+#tarea-titulo{
+  color: #5c068c;
+  font-size: 30px;
+}
+
+#nombre-usuario{
+  color: #505050;
+  font-size: 20px;
+  margin-top: 4%;
+}
+
+#tarea{
+  color: #505050;
+  font-size: 20px;
+  margin-top: 4%;
+}
+
+#descripcion-tarea{
+  color: #505050;
+  font-size: 20px;
+  margin-top: 4%;
+}
+
+#fecha{
+  color: #505050;
+  font-size: 20px;
+  margin-top: 4%;
+}
+
+#nombre-usuario-listar{
+  color: #505050;
+  font-size: 20px;
+  margin-top: 4%;
+}
+
+#btn-crear-nota{
+  background-color: #5c068c;
+  font-size: 17px;
+}
+
+
+/* label focus color */
+.input-field input:focus + label {
+  color: #5c068c !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid #5c068c !important;
+  box-shadow: 0 1px 0 0 #5c068c !important
+}
+
+#contenido-calendario{
+  margin-top: 2%;
+}
+
+.grad {
+  background: url("../img/slider-images/inicio.png");
+  height: 100%;
+}
+
+#etiquetas-slider{
+  background-color: rgba(143, 54, 190, 0.97);
+  border-radius: 10px 10px 10px 10px;
+}
+.slider .indicators .indicator-item {
+  background-color: #b996cc;
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: #5c068c;
+}
+
+#tareas-salida {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#error-lista {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: red;
+}
+
+#botonManual:focus-visible {
+  outline: 5px solid rgb(255, 111, 0);
+}
+
+#botonCalendarioAcademico:focus-visible {
+  outline: 5px solid rgb(255, 111, 0);
+}
+
+#colorcontrast {
+  color:white;
+}

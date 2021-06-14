@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!--Hoja de estilo propia-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!--Fuente ULL-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <link rel="icon" href="../assets/img/favicon.ico">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Organiza tu tiempo y mejora tu estudio</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="navbar-fixed">
+        <nav id="barra_nav">
+          <div class="nav-wrapper">
+            <div class="container">
+              <a tabindex="0" id="logo-container" href="../index.html" class="brand-logo" title="Logo Universidad de la Laguna"><object id="logo_nav" class="responsive-img" type="image/svg+xml" data="../assets/img/ull_logo_text.svg">Your browser does not support SVG.</object></a>
+              <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down"
+                  role="menubar"
+                  aria-label="Universidad de la laguna">
+                <li role="none"><a role="menuitem" aria-haspopup="true" aria-expanded="false" href="../index.html" tabindex="1">Inicio</a></li>
+                <li><a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./calendario.html" tabindex="1">Calendario</a></li>
+                <li><a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./listaTareas.html" tabindex="1">Lista de tareas pendientes</a></li>
+                <li><a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./sobrenosotros.html" tabindex="1">Sobre nosotros</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+        <ul class="sidenav" id="menu-responsive">
+        <li><a href="./index.html" tabindex="-1">Inicio</a></li>
+        <li><a href="./calendario.html" tabindex="-1">Calendario</a></li>
+        <li><a href="./listaTareas.html" tabindex="-1">Lista de tareas pendientes</a></li>
+        <li><a href="./sobrenosotros.html" tabindex="-1">Sobre nosotros</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <nav id="breadcrumbs" class="z-depth-0">
+        <div class="nav-wrapper">
+          <div class="col s12" id="breadcrumbs-general">
+            <a href="../index.html" class="breadcrumb" tabindex="2">Inicio</a>
+            <a href="./funcionamiento.html" class="breadcrumb" tabindex="2">Manual de uso</a>
+          </div>
+        </div>
+      </nav>
+
+      <h1 class="container" id="titulo" tabindex="3"><b>Manual de uso</b></h1>
+
+      <div class="container" id="cuerpo" >
+        <p tabindex="3">Esta Web te permitirá organizar tu día a día, mediante las opciones de añadir, completar y comprobar tareas pendientes. Para ello debemos de seguir una serie de pasos, dependiendo del punto en el que nos encontremos, pues se distinguirá en usuarios que con anterioridad hayan añadido tareas, y usuarios nuevos.</p>
+        <ul>
+          <li tabindex="4"><b>Nuevo usuario</b></li>
+          <ol tabindex="4">
+            <li>Acceder a la sección <a href="./listaTareas.html">lista de tareas pendientes</a></li>
+            <li>Añadir una nota, la cual se asocia al usuario indicado</li>
+            <li>Consultar todas tus tareas pendientes desde la sección <a href="./calendario.html">Calendario</a></li>
+            <li>Posibilidad de acceder a lista de tareas pendientes para poder observar tus tareas y marcar si ya las completaste para que se eliminen</li>
+          </ol>
+          <li tabindex="5"><b>Usuario</b></li>
+          <ul tabindex="5">
+            <li>Acceder a la sección <a href="./calendario.html">calendario</a> y consultar las tareas para un determinado usuario</li>
+            <li>Acceder a la sección <a href="./listaTareas.html">lista de tareas pendientes</a> y añadir nuevas tareas o marcar como terminadas otras</li>
+          </ul>
+        </ul> 
+      </div>
+    </main>
+
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s4 14 offset-s1">
+            <h5 class="white-text" id="titulo-pie" tabindex="6">Organiza tu tiempo y mejora tu estudio</h5>
+            <p class="grey-text text-lighten-4">
+              Pabellón de Gobierno, C/ Padre Herrera s/n<br>
+              Apartado Postal 456<br>
+              38200, San Cristóbal de La Laguna<br>
+              Santa Cruz de Tenerife - España<br>
+              Teléfono: (+34) 900 43 25 26
+            </p>
+          </div>
+          <div class="col s2 offset-s1">
+            <h5 class="white-text" id="titulo-pie" tabindex="7">Servicios</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="./calendario.html" tabindex="8">Calendario</a></li>
+              <li><a class="grey-text text-lighten-3" href="./listaTareas.html" tabindex="8">Lista de tareas</a></li>
+            </ul>
+          </div>
+          <div class="col s2 offset-s1">
+            <h5 class="white-text" id="titulo-pie" tabindex="9">Otros enlaces</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="./accesibilidad.html" tabindex="10">Accesibilidad</a></li>
+              <li><a class="grey-text text-lighten-3" href="./sobrenosotros.html" tabindex="10">Sobre nosotros</a></li>
+              <li><a class="grey-text text-lighten-3" href="./funcionamiento.html" tabindex="10">Manual de uso</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script src="../scripts/main.js"></script>
+
+  </body>
+</html>
+      
+      
